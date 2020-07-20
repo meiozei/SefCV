@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#SefHead {
+    background: url("space.png") no-repeat fixed top;
+    background-size: cover;
+    padding: 20%;
+}
+
+.imgfloat1 {
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translatey(0px);
+    animation: float 2.5s ease-in-out infinite;
+    display: flex;
+    margin-left: 3vw;
+}
+
+.imgfloat2 {
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transform: translatey(0px);
+    animation: float 2.5s ease-in-out infinite;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#color1 {
+    color: whitesmoke;
+}
+
+.size1 {
+    font-size: xx-large;
+}
+
+.buttonMargin {
+    margin-left: 3vh;
+}
+
+.buttonMargin2 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body{
+    background-color: #dedede;
+  }
+
+  .gallery{
+    display: flex;
+    width: 900px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 20%;
+  }
+  
+  figure{
+    width: 200px;
+    margin: 8px 0;
+    border: 1px solid #777;
+    padding: 8px;
+    box-sizing: border-box;
+    background-color: #fff;
+  }
+  figure img{
+    width: 100%;
+  }
+  figure figcaption{
+    text-align: center;
+    padding: 8px 4px;
+  }
+
+@keyframes float {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(-20px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
